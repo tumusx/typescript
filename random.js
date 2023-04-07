@@ -4,7 +4,6 @@ var age = 12;
 function mostrarIdadeNomeUsuario() {
     console.log(firstName.concat(lastName.toString()));
     console.log("Idade: " + age);
-    //alert(firstName.concat(lastName.toString()))
 }
 mostrarIdadeNomeUsuario();
 function sumElements(firstElement, secondElement) {
@@ -49,6 +48,9 @@ var Diretoras = /** @class */ (function () {
             }
             return class_2;
         }());
+        if (aluno != undefined) {
+            console.log("Tem valor");
+        }
         aluno.idades = 23;
         aluno.nomes = "Murillo";
         return aluno;
