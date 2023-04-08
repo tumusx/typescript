@@ -48,15 +48,22 @@ var Diretoras = /** @class */ (function () {
             }
             return class_2;
         }());
-        if (aluno != undefined) {
-            console.log("Tem valor");
-        }
         aluno.idades = 23;
         aluno.nomes = "Murillo";
         return aluno;
     };
     return Diretoras;
 }());
+function calcular(numeros, callback) {
+    var sum = 0;
+    numeros.forEach(function (value) {
+        sum += value;
+    });
+    callback(sum);
+}
+calcular([100, 684, 144], function (resultado) {
+    console.log("Resultado da soma dos n\u00FAmeros \u00E9: ".concat(resultado));
+});
 function merge() {
     var alunos = new Diretoras();
     var diretora = new Alunos();

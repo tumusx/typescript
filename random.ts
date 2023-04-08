@@ -65,6 +65,17 @@ class Diretoras {
     }
 }
 
+function calcular(numeros: number[], callback: (resultado: number) => void) {
+    let sum = 0;
+    numeros.forEach((value) => {
+        sum += value
+    })
+    callback(sum)
+}
+calcular([100, 684, 144], (resultado: number) => {
+    console.log(`Resultado da soma dos números é: ${resultado}`)
+})
+
 function merge() {
     let alunos: Alunos = new Diretoras()
     let diretora: Diretoras = new Alunos()
